@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:mo="http://www.w3.org/1999/xhtml"
+      xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head th:insert="/common/layui-head :: head"/>
+<!--layui-layout-body 高度自适应-->
+<body class="layui-layout-body">
+<!--layui-layout-admin 自适应-->
+<div class="layui-layout-admin">
+    <!--引入Logo layui-header height: 60px-->
+    <head th:insert="/common/layui-header :: header"/>
+    <!--引入左侧导航栏 layui-side 高度自适应-->
+    <div th:insert="/common/layui-side :: side"/>
+    <!--layui-body 高度自适应-->
+    <div class="layui-body">
+        <!--搜索-->
+        <div class="layui-card-body">
+            <div class="layui-row">
+
+                <div class="pull-left layui-form-pane">
+
+                    <div class="layui-inline ui-widget">
+                        <label class="layui-form-label">用户名</label>
+                        <div class="layui-input-block">
+                            <input class="layui-input" id="userName" placeholder="请输入用户名">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline queryDiv">
+                        <button class="layui-btn" data-type="reload"><i class="fa fa-search"></i></button>
+                    </div>
+
+                </div>
+            </div>
+            <!--数据表格-->
+            <table class="layui-hide" id="userTable" lay-filter="userFilter"></table>
+        </div>
+        <script src="/js/module/common/common.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+        <script type="text/javascript" src="/js/module/user/index.js"></script>
+    </div>
+    <!--layui-footer height: 44px-->
+    <div th:insert="/common/layui-footer :: footer"/>
+</div>
+</body>
+</html>

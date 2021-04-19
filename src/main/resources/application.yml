@@ -1,0 +1,62 @@
+server:
+  port: 6767
+
+spring:
+  application:
+    name: license
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  cache:
+    type: ehcache
+    ehcache:
+      config: classpath:/config/ehcache.xml
+
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+
+  thymeleaf:
+    prefix: classpath:/templates
+    suffix: .html
+    mode: HTML
+    encoding: utf-8
+    servlet.content-type: text/html
+    cache: false
+
+  ## 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/license?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: eio
+    password: Eio12345+
+    hikari:
+      pool-name: user-1
+      minimum-idle: 30
+      maximum-pool-size: 100
+      connectionTimeout: 60000
+      idleTimeout: 60000
+      validationTimeout: 3000
+      maxLifetime: 60000
+      register-mbeans: true
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      #      hibernate.dialect: com.eio.common.mysql.MySQLDialectUTF8
+      #      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+      hibernate.format_sql: false
+    open-in-view: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+## 日志配置
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: C:/Users/Administrator/Desktop/license-logs
+
