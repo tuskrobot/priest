@@ -174,7 +174,7 @@
 
     <!--开发环境:打印控制台-->
     <springProfile name="dev">
-        <logger name="com.eio" level="DEBUG"/>
+        <logger name="com.tusk" level="DEBUG"/>
         <logger name="com.zaxxer.hikari" level="INFO"/>
         <logger name="org.hibernate.engine.internal" level="INFO"/>
         <logger name="org.hibernate.hql.internal.ast" level="INFO"/>
