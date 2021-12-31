@@ -35,7 +35,7 @@ a{
 /* 导航栏样式 */
 .layui-layout-admin .layui-header{
 	height: 50px;
-	background-color: #8B0A50;
+	background-color: #ffffff;
 }
 .layui-layout-admin .layui-header .layui-logo{
 	width: 220px;
@@ -59,7 +59,7 @@ a{
 	transition: left 0.3s ease, width 0.3s ease;
 }
 .layui-layout-admin .layui-header .side-toggle:hover{
-	background-color: #00635a;
+	background-color: #222d32;
 }
 .layui-layout-admin .layui-header .layui-nav .layui-nav-item{
 	line-height: 50px;
@@ -72,7 +72,7 @@ a{
 	transition: all 0.2s;
 }
 .layui-layout-admin .layui-header .layui-nav .layui-nav-item>a:hover{
-	background-color: #038478;
+	background-color: #222d32;
 }
 .layui-layout-admin .layui-header .layui-nav .layui-nav-item>a>.fa{
 	font-size: 18px;
@@ -293,7 +293,7 @@ a{
 	display:inline-block;
 	width: 10px;
 	height: 10px;
-	background-color: #5FB878;
+	background-color: #222d32;
 	border-radius: 50%;
 	margin-right: 2px;
 }
@@ -350,11 +350,11 @@ a{
     background-color: #f8f8f8;
 }
 .layui-layout-admin .layui-body .layui-tab-title .layui-this{
-    color: #8B0A50;
+    color: #494e8f;
     background-color: #f8f8f8;
 }
 .layui-layout-admin .layui-body .layui-tab-title .layui-this:after{
-    border-bottom: 2px solid #8B0A50;
+    border-bottom: 2px solid #494e8f;
 }
 .layui-layout-admin .layui-body .layui-tab-title .layui-icon-home{
 	text-align: left;
@@ -421,8 +421,8 @@ a{
     background-color: #fff;
 }
 .eio-checkbox input[type="checkbox"]:checked + .layui-icon:before{
-    border-color: #8B0A50;
-    background-color: #8B0A50;
+    border-color: #494e8f;
+    background-color: #494e8f;
 }
 
 /* 收起侧边栏 */
@@ -493,7 +493,7 @@ a{
 	z-index: -1;
 }
 .layui-layout-login .login-bg .cover{
-	background-color: #8B0A50;
+	background-color: #494e8f;
 	height: 50%;
 }
 .layui-layout-login .login-content{
@@ -562,14 +562,14 @@ a{
 	line-height: 14px;
 }
 .layui-layout-login .layui-form-item .layui-form-checkbox[lay-skin=primary]:hover i {
-    border-color: #8B0A50;
+    border-color: #494e8f;
 }
 .layui-layout-login .layui-form-item .layui-form-checked[lay-skin=primary] i{
-    border-color: #8B0A50;
-    background-color: #8B0A50;
+    border-color: #494e8f;
+    background-color: #494e8f;
 }
 .layui-layout-login .layui-form-item .forget-password{
-	color: #8B0A50;
+	color: #494e8f;
 }
 
 /* 页面通用样式 */
@@ -660,21 +660,21 @@ a{
 .eio-layout-page .layui-form-pane .layui-form-label{
 	width: auto;
 	background-color: #fff;
-	border-color: #8B0A50;
-	color: #8B0A50;
+	border-color: #494e8f;
+	color: #494e8f;
 	font-weight: bold;
 }
 .eio-layout-page .layui-form-pane input,
 .eio-layout-page .layui-form-pane select{
-	border-color: #8B0A50;
+	border-color: #494e8f;
 	border-radius: 0 2px 2px 0;
 }
 .eio-layout-page .layui-form-pane input:hover,
 .eio-layout-page .layui-form-pane input:focus{
-	border-color: #8B0A50 !important;
+	border-color: #494e8f !important;
 	outline: 0;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 150, 136, 0.6);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 150, 136, 0.6);
+	-webkit-box-shadow: inset 0 1px 1px #494e8f, 0 0 8px #494e8f;
+	box-shadow: inset 0 1px 1px #494e8f, 0 0 8px #494e8f;
 }
 .eio-layout-page .layui-form-pane .layui-input-block{
 	margin-left: 0px;
@@ -696,10 +696,10 @@ a{
     table-layout: fixed;
 }
 .eio-layout-page .eio-table a{
-	color: #8B0A50;
+	color: #494e8f;
 }
 .eio-layout-page .eio-table a:hover {
-	color: #004a43;
+	color: #494e8f;
 	text-decoration: underline;
 }
 .eio-layout-page .eio-table th,
@@ -814,7 +814,7 @@ a{
 	padding: 8px 14px;
 	margin-left: -1px;
 	line-height: 1.25;
-	color: #8B0A50;
+	color: #494e8f;
 	background-color: #FFF;
 	border: 1px solid #dee2e6;
 }
@@ -833,8 +833,8 @@ a{
 .page-item.active .page-link {
 	z-index: 1;
 	color: #FFF;
-	background-color: #8B0A50;
-	border-color: #8B0A50;
+	background-color: #494e8f;
+	border-color: #494e8f;
 }
 .page-item .breviary{
 	font-weight: bold;
@@ -851,7 +851,7 @@ a{
 .eio-compile .layui-input-block input:hover,
 .eio-compile .layui-input-inline textarea:hover,
 .eio-compile .layui-input-block textarea:hover{
-    border-color: #8B0A50!important;
+    border-color: #494e8f!important;
 }
 .eio-compile .layui-input-info{
     float: left;
@@ -1008,7 +1008,7 @@ a{
     right: 12px;
     z-index: 999999;
     color: #FFFFFF;
-    background-color: rgba(0, 150, 136, 0.69);
+    background-color: #222d32;
     font-size: 11px;
     width: 14px;
     height: 14px;
@@ -1017,7 +1017,7 @@ a{
     cursor: pointer;
 }
 .upload-show .upload-item .upload-item-close:hover{
-    background-color: #8B0A50;
+    background-color: #494e8f;
 }
 
 /*layui基础类型修改*/
@@ -1081,6 +1081,6 @@ a{
 
 
 .layui-form-select dl dd.layui-this {
-	background-color: #8B0A50;
+	background-color: #494e8f;
 	color: #fff;
 }

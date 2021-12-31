@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>LICENSE</title>
+    <title>Priest - Register Center</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/plugins/layui/css/layui.css">
@@ -11,7 +11,7 @@
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
-        <div class="layui-logo">License</div>
+        <div class="layui-logo">Priest</div>
     </div>
 
     <div class="layui-side layui-bg-black">
@@ -19,15 +19,9 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree"  lay-filter="test">
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;">授权管理</a>
+                    <a class="" href="javascript:;">服务管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="/license/index">授权列表</a></dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;">系统管理</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="/user/index" lay-href="/user/index">用户管理</a></dd>
+                        <dd><a href="/register/index">注册列表</a></dd>
                     </dl>
                 </li>
             </ul>
@@ -36,14 +30,21 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <button class="layui-btn" data-type="reload" id="search" style="margin-left:15px; margin-top: 15px">搜索</button>
-        <div id="table_license" lay-filter="table">
+        <div class="layui-collapse">
+            <div class="layui-colla-item">
+                <h2 class="layui-colla-title">LOTHAR注册服务</h2>
+                <div class="layui-colla-content layui-show"></div>
+            </div>
+            <div class="layui-colla-item">
+                <h2 class="layui-colla-title">PALADIN注册服务</h2>
+                <div class="layui-colla-content layui-show"></div>
+            </div>
         </div>
     </div>
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © layui.com - 底部固定区域
+        © tuskrobots.com
     </div>
 </div>
 <script type="text/javascript" th:src="@{/plugins/layui/layui.js}"></script>

@@ -30,11 +30,11 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: false
-    database-platform: com.tusk.priest.common.dialect.SQLiteDialect
+    database-platform: com.tusk.priest.dialect.SQLiteDialect
 
   datasource:
     driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:e:\\java\\db\\priest.db
+    url: jdbc:sqlite:priest.db
     username: tusk
     password: Tusk12345+
 
