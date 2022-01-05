@@ -1,0 +1,27 @@
+.table-register .layui-colla-content {
+    padding: 0 !important;
+}
+
+.table-register .layui-table-page {
+    display: none;
+}
+
+.layui-table, .layui-table-view {
+    margin: 0 !important;
+}
+
+.table-register .layui-colla-title {
+    background-color: #ffffff;
+    color: #FD482C;
+    font-weight: bold;
+    font-size: 20px;
+    /*font: bold 20px Consolas, serif;*/
+}
+
+.layui-colla-item {
+    border: none;
+}
+
+.layui-colla-item-second {
+    margin-top: 20px;
+}

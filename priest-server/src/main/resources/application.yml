@@ -1,0 +1,48 @@
+server:
+  port: 7654
+
+spring:
+  application:
+    name: priest
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  cache:
+    type: ehcache
+    ehcache:
+      config: classpath:/config/ehcache.xml
+
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+
+  thymeleaf:
+    prefix: classpath:/templates
+    suffix: .html
+    mode: HTML
+    encoding: utf-8
+    servlet.content-type: text/html
+    cache: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: com.tusk.priest.server.dialect.SQLiteDialect
+
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:priest.db
+    username: tusk
+    password: Tusk12345+
+
+
+
+## 日志配置
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: /logs
+
