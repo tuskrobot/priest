@@ -1,0 +1,109 @@
+{
+  "properties": [
+    {
+      "name": "spring.cloud.priest.server-addr",
+      "type": "java.lang.String",
+      "defaultValue": "localhost:8848",
+      "description": "priest server address."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.server-addr",
+      "type": "java.lang.String",
+      "defaultValue": "${spring.cloud.priest.server-addr}",
+      "description": "priest discovery server address."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.service",
+      "type": "java.lang.String",
+      "defaultValue": "${spring.application.name}",
+      "description": "the service name to register, default value is ${spring.application.name}."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": true,
+      "description": "enable priest discovery or not."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.instance-enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": true,
+      "description": "If instance is enabled to accept request. The default value is true."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.ephemeral",
+      "type": "java.lang.Boolean",
+      "defaultValue": true,
+      "description": "If instance is ephemeral.The default value is true."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.namingLoadCacheAtStart",
+      "type": "java.lang.Boolean",
+      "defaultValue": "false",
+      "description": "naming load from local cache at application start ."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.watch.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": "true",
+      "description": "enable priest discovery watch or not ."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.username",
+      "type": "java.lang.String",
+      "defaultValue": "${spring.cloud.priest.username}",
+      "description": "priest discovery service's username to authenticate."
+    },
+    {
+      "name": "spring.cloud.priest.discovery.password",
+      "type": "java.lang.String",
+      "defaultValue": "${spring.cloud.priest.password}",
+      "description": "priest discovery service's password to authenticate."
+    },
+    {
+      "name": "spring.cloud.priest.username",
+      "type": "java.lang.String",
+      "description": "priest userName to authenticate."
+    },
+    {
+      "name": "spring.cloud.priest.password",
+      "type": "java.lang.String",
+      "description": "priest password to authenticate."
+    },
+    {
+      "name": "spring.redis.host",
+      "type": "java.lang.String",
+      "defaultValue": "localhost",
+      "description": "priest client redis's host."
+    },
+    {
+      "name": "spring.redis.database",
+      "type": "java.lang.Integer",
+      "defaultValue": 0,
+      "description": "priest client redis's database index."
+    },
+    {
+      "name": "spring.redis.password",
+      "type": "java.lang.String",
+      "description": "priest client redis's password."
+    },
+    {
+      "name": "spring.cloud.priest.redis.host",
+      "type": "java.lang.String",
+      "defaultValue": "${spring.redis.host}",
+      "description": "priest client redis's host."
+    },
+    {
+      "name": "spring.cloud.priest.redis.database",
+      "type": "java.lang.Integer",
+      "defaultValue": "${spring.redis.database}",
+      "description": "priest client redis's database index."
+    },
+    {
+      "name": "spring.cloud.priest.redis.password",
+      "type": "java.lang.String",
+      "defaultValue": "${spring.redis.password}",
+      "description": "priest client redis's password."
+    }
+  ]
+}

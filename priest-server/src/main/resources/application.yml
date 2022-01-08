@@ -30,13 +30,22 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: false
-    database-platform: com.tusk.priest.server.dialect.SQLiteDialect
+    database-platform: com.tusk.priest.dialect.SQLiteDialect
+
+  redis:
+    host: 4.4.4.4
+    database: 3
 
   datasource:
     driver-class-name: org.sqlite.JDBC
     url: jdbc:sqlite:priest.db
     username: tusk
     password: Tusk12345+
+
+  cloud:
+    priest:
+      server-addr: 192.168.88.29:7654
+
 
 
 

@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.tusk.priest.registry.PriestAutoRegistration, \
+  com.tusk.priest.registry.PriestServiceRegistryAutoConfiguration, \
+  com.tusk.priest.discovery.PriestDiscoveryAutoConfiguration
+org.springframework.context.ApplicationListener=\
+  com.tusk.priest.listener.PriestClientRegisterListener
